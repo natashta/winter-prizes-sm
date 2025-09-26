@@ -1,0 +1,3525 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="stylesheet"
+  href="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/fonts/smsans/v2/font.css">
+<link rel="stylesheet"
+  href="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2023/files/swiper-bundle10.min.css" />
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .ky--game {
+    background-color: rgba(22, 82, 229, 1);
+    font-family: 'SMSans', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .ky--game__bg {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/bg-dn.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  .ky--game * {
+    box-sizing: border-box;
+  }
+
+  .ky--game__container {
+    /* max-width: 1920px;*/
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  .sm-html-pad-m0 {
+    max-width: 1920px;
+    margin: auto;
+  }
+
+  .sm-html-pad {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+
+  .sm-html-pad-right {
+    padding-right: 180px;
+  }
+
+  .sm-html-pad-left {
+    padding-left: 180px;
+  }
+
+  .ky--game__h1 {
+    font-family: 'SMSans', sans-serif;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    font-size: 72px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 68px;
+    text-align: center;
+  }
+
+  .ky--game__h2 {
+    font-family: 'SMSans', sans-serif;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 56px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: center;
+
+  }
+
+  .ky--game__h3 {
+    font-family: 'SMSans', sans-serif;
+    max-width: 730px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 38px;
+    text-align: center;
+  }
+
+  .ky--game__tv,
+  .ky--game__mv {
+    display: none;
+  }
+
+  .ky--game__1439 {
+    display: none;
+  }
+
+  .ky--mb {
+    margin-bottom: 154px;
+  }
+
+  /* анимация Снега */
+  @keyframes snowBG {
+    0% {
+      background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+    100% {
+      background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+  }
+
+  .ky--game__snow {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2023/news/43049320_27_11/snowflake.webp),
+      url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2023/news/43049320_27_11/snowflake3.webp),
+      url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2023/news/43049320_27_11/snowflake2.webp);
+    background-repeat: repeat;
+    animation: snowBG 20s linear infinite;
+    z-index: 1;
+  }
+
+  @media (max-width: 1919px) {
+    .sm-html-pad {
+      padding-left: 135px;
+      padding-right: 135px;
+    }
+
+    .sm-html-pad-right {
+      padding-right: 135px;
+    }
+
+    .sm-html-pad-left {
+      padding-left: 135px;
+    }
+
+    .ky--game__h1 {
+      font-size: 56px;
+      line-height: 68px;
+    }
+
+    .ky--game__h2 {
+      font-size: 48px;
+      line-height: 58px;
+    }
+
+    .ky--game__h3 {
+      font-size: 24px;
+      line-height: 32px;
+      /* max-width: 600px; */
+    }
+
+    .ky--mb {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 1439px) {
+    .sm-html-pad {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .sm-html-pad-right {
+      padding-right: 50px;
+    }
+
+    .sm-html-pad-left {
+      padding-left: 50px;
+    }
+
+    .ky--game__h1 {
+      font-size: 40px;
+      line-height: 68px;
+    }
+
+    .ky--game__h2 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    .ky--game__h3 {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.48px;
+      max-width: 480px;
+    }
+
+    .ky--game__1439 {
+      display: block;
+    }
+
+    .ky--mb {
+      margin-bottom: 72px;
+    }
+
+    .ky--game__bg {
+      background-image: url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/bg-tn.webp);
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .sm-html-pad {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .sm-html-pad-right {
+      padding-right: 24px;
+    }
+
+    .sm-html-pad-left {
+      padding-left: 24px;
+    }
+
+    .ky--game__h1 {
+      font-size: 40px;
+      line-height: 44px;
+    }
+
+    .ky--game__h2 {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    .ky--game__h3 {
+      font-size: 13px;
+      line-height: 18px;
+    }
+
+    .ky--game__tv {
+      display: block;
+    }
+
+    .ky--game__tvn {
+      display: none !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .sm-html-pad {
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+
+    .sm-html-pad-right {
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+
+    .sm-html-pad-left {
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .sm-html-pad-m0 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .ky--game__h2 {
+      font-size: 23px;
+      line-height: 30px;
+      letter-spacing: 1px;
+    }
+
+    .ky--game__h3 {
+      font-size: 13px;
+      line-height: 18px;
+    }
+
+    .ky--game__mv {
+      display: block;
+    }
+
+    .ky--game__tv {
+      display: none !important;
+    }
+
+    .ky--game__mvn {
+      display: none !important;
+    }
+
+    .ky--game__bg {
+      background-image: url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/bg-m.webp);
+      background-position: top 2% center;
+      background-size: 100%;
+    }
+
+    .ky--mb {
+      margin-bottom: 56px;
+    }
+
+    .ky--game__h1 {
+      font-size: 36px;
+      line-height: 38px;
+    }
+
+    .ky--game__1439 {
+      display: none;
+    }
+  }
+
+  @media (max-width: 372px) {
+    .ky--game__h1 {
+      font-size: 34px;
+      line-height: 40px;
+    }
+
+    .ky--game__h3 br {
+      display: none;
+    }
+  }
+</style>
+
+<main class="ky--game">
+  <div class="ky--game__bg"></div>
+  <!-- <div class="ky--game__snow"></div> -->
+  <div class="ky--game__container">
+    <!-- start top banner -->
+
+    <!--Анимация Новогодний розыгрыш 2024-->
+    <style>
+      @keyframes float {
+        0% {
+          transform: translateY(0%);
+          animation-timing-function: ease-in-out;
+        }
+
+        50% {
+          transform: translateY(8%);
+          animation-timing-function: ease-in-out;
+        }
+
+        100% {
+          transform: translateY(0);
+          animation-timing-function: ease-in-out
+        }
+      }
+
+      @keyframes float-h {
+        0% {
+          transform: translate(2%, 2%);
+          animation-timing-function: ease-in;
+        }
+
+        40% {
+          transform: translate(4%, 0%);
+          transition-timing-function: ease-in-out;
+        }
+
+        70% {
+          transform: translate(-3%, -2%);
+          transition-timing-function: ease-in-out;
+        }
+
+        100% {
+          transform: translate(0%, 0%);
+          transition-timing-function: ease-in-out;
+        }
+      }
+
+      .ky--game__top_center {
+        height: 900px;
+      }
+
+      .nr_top-image {
+        max-width: 220px;
+        position: absolute;
+        z-index: 20;
+        top: 40px;
+        right: 22%;
+      }
+
+      .nr_top-image img {
+        width: 100%;
+        object-fit: contain;
+      }
+
+      .nr__top_snowflake,
+      .nr__top_prize {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+
+      .nr--snowflakeAnim,
+      .nr--prizeAnim {
+        position: absolute;
+        z-index: 10;
+        height: fit-content;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      .nr--snowflakeAnim::after,
+      .nr--prizeAnim:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+      }
+
+      .nr--snowflakeAnim::after {background-blend-mode: soft-light;}
+
+      .nr--snowflakeAnim {
+        animation-name: float;
+        mix-blend-mode: lighten;
+      }
+
+      .nr--prizeAnim {
+        animation-name: float-h;
+        animation-duration: 10s;
+      }
+
+      .nr--snowflakeAnim--1 {
+        width: 900px;
+        height: 900px;
+        bottom: -10%;
+        left: -16%;
+        opacity: 0.9;
+        z-index: 1;
+      }
+
+      .nr--snowflakeAnim--2 {
+        width: 690px;
+        height: 690px;
+        top: -10%;
+        right: -10%;
+        opacity: 0.9;
+        animation-delay: 0.8s;
+      }
+
+      .nr--snowflakeAnim--3 {
+        width: 150px;
+        height: 150px;
+        bottom: 15%;
+        right: 5%;
+        opacity: 0.9;
+        animation-delay: -1.7s;
+        animation-direction: alternate-reverse;
+      }
+
+      .nr--snowflakeAnim--4 {
+        width: 500px;
+        height: 500px;
+        bottom: -4%;
+        right: 30%;
+        opacity: 0.7;
+        animation-direction: alternate-reverse;
+      }
+
+      .nr--snowflakeAnim--1:after {
+        background-image: url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/anim/snow.webp);
+      }
+
+      .nr--snowflakeAnim--2:after {
+        background-image: url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/anim/snow.webp);
+      }
+
+      .nr--snowflakeAnim--3:after {
+        background-image: url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/anim/snow-sn.webp);
+      }
+
+      .nr--snowflakeAnim--4:after {
+        background-image: url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/anim/snow-curven.webp);
+      }
+
+      .nr--prizeAnim--1 {
+        width: 430px;
+        height: 200px;
+        top: 0;
+        left: 30%;
+        animation-direction: alternate-reverse;
+      }
+
+      .nr--prizeAnim--2 {
+        width: 580px;
+        height: 800px;
+        top: -10%;
+        left: 10%;
+        z-index: 2;
+        animation-delay: -2.7s;
+      }
+
+      .nr--prizeAnim--3 {
+        width: 354px;
+        height: 300px;
+        bottom: 10%;
+        left: 30%;
+        animation-delay: 1s;
+      }
+
+      .nr--prizeAnim--4 {
+        width: 610px;
+        height: 510px;
+        bottom: 10%;
+        right: 20%;
+        z-index: 10;
+        animation-delay: 2.2s;
+      }
+
+      .nr--prizeAnim--5 {
+        width: 380px;
+        height: 580px;
+        top: 60px;
+        right: 36%;
+        z-index: 3;
+        animation-delay: -1s;
+      }
+
+      .nr--prizeAnim--6 {
+        width: 700px;
+        height: 630px;
+        top: 50px;
+        right: 38%;
+        z-index: 5;
+        animation-delay: 0.6s;
+        animation-name: float;
+      }
+
+      .nr--prizeAnim--1:after {
+        background-image: url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/anim/dyson.webp);
+      }
+
+      .nr--prizeAnim--2:after {
+        background-image: url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/anim/velo.webp);
+      }
+
+      .nr--prizeAnim--3:after {
+        background-image: url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/anim/tel.webp);
+      }
+
+      .nr--prizeAnim--4:after {
+        background-image: url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/anim/bord.webp);
+      }
+
+      .nr--prizeAnim--5:after {
+        background-image: url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/anim/tel-b.webp);
+      }
+
+      .nr--prizeAnim--6:after {
+        background-image: url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/anim/ball.webp);
+      }
+
+      @media (max-width: 1919px) {
+        .ky--game__top_center {
+          height: 800px;
+        }
+
+        .nr--snowflakeAnim--1 {
+          width: 700px;
+          height: 700px;
+          left: -12%;
+        }
+
+        .nr--snowflakeAnim--2 {
+          width: 500px;
+          height: 500px;
+          right: -7%;
+        }
+
+        .nr--snowflakeAnim--4 {
+          width: 360px;
+          height: 360px;
+          bottom: 0;
+          right: 33%;
+        }
+
+        .nr--prizeAnim--1 {
+          width: 320px;
+          height: 150px;
+          top: 2%;
+        }
+
+        .nr--prizeAnim--2 {
+          left: 5%;
+        }
+
+        .nr--prizeAnim--3 {
+          width: 280px;
+          height: 240px;
+          left: 26%;
+        }
+
+        .nr--prizeAnim--4 {
+          width: 460px;
+          height: 400px;
+        }
+
+        .nr--prizeAnim--5 {
+          width: 330px;
+          height: 530px;
+          right: 30%;
+        }
+
+        .nr--prizeAnim--6 {
+          width: 620px;
+          height: 550px;
+          right: 35%;
+        }
+      }
+
+      @media (max-width: 1439px) {
+        .nr_top-image {
+          max-width: 170px;
+          right: 25%;
+        }
+
+        .ky--game__top_center {
+          height: 660px;
+        }
+
+        .nr--snowflakeAnim--1 {
+          width: 560px;
+          height: 560px;
+          left: -18%;
+        }
+
+        .nr--snowflakeAnim--2 {
+          width: 400px;
+          height: 400px;
+          top: 0;
+          right: -12%;
+        }
+
+        .nr--snowflakeAnim--3 {
+          width: 100px;
+          height: 100px;
+          right: 0;
+        }
+
+        .nr--snowflakeAnim--4 {
+          width: 330px;
+          height: 330px;
+          bottom: 0;
+          right: 24%;
+        }
+
+        .nr--prizeAnim--1 {
+          width: 280px;
+          height: 120px;
+        }
+
+        .nr--prizeAnim--2 {
+          width: 460px;
+          height: 600px;
+          top: -10%;
+        }
+
+        .nr--prizeAnim--3 {
+          width: 200px;
+          height: 170px;
+          left: 23%;
+        }
+
+        .nr--prizeAnim--4 {
+          width: 360px;
+          height: 300px;
+          right: 12%;
+        }
+
+        .nr--prizeAnim--5 {
+          width: 260px;
+          height: 380px;
+        }
+
+        .nr--prizeAnim--6 {
+          width: 450px;
+          height: 480px;
+        }
+      }
+
+      @media (max-width: 1023px) {
+        .nr_top-image {
+          display: none;
+        }
+
+        .ky--game__top_center {
+          height: 550px;
+        }
+
+        .nr--snowflakeAnim--1 {
+          width: 490px;
+          height: 490px;
+          left: -25%;
+          bottom: -5%;
+        }
+
+        .nr--snowflakeAnim--2 {
+          width: 330px;
+          height: 330px;
+          right: -16%;
+        }
+
+        .nr--snowflakeAnim--3 {
+          width: 60px;
+          height: 60px;
+        }
+
+        .nr--snowflakeAnim--4 {
+          width: 250px;
+          height: 250px;
+          right: 24%;
+        }
+
+        .nr--prizeAnim--1 {
+          width: 220px;
+          height: 120px;
+        }
+
+        .nr--prizeAnim--2 {
+          width: 340px;
+          height: 420px;
+          top: -18%;
+          left: 0;
+        }
+
+        .nr--prizeAnim--3 {
+          width: 180px;
+          height: 150px;
+          left: 15%;
+        }
+
+        .nr--prizeAnim--4 {
+          width: 300px;
+          height: 250px;
+          bottom: 16%;
+        }
+
+        .nr--prizeAnim--5 {
+          width: 200px;
+          height: 320px;
+        }
+
+        .nr--prizeAnim--6 {
+          width: 420px;
+          height: 450px;
+        }
+      }
+
+      @media (max-width: 800px) {
+        .nr--snowflakeAnim--1 {
+          width: 450px;
+          height: 450px;
+          left: -30%;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .ky--game__top_center {
+          height: 500px;
+        }
+
+        .nr--snowflakeAnim--1 {
+          width: 280px;
+          height: 280px;
+          left: -22%;
+          bottom: -5%;
+        }
+
+        .nr--snowflakeAnim--2 {
+          width: 140px;
+          height: 140px;
+          right: -10%;
+          top: -16%;
+        }
+
+        .nr--snowflakeAnim--3 {
+          width: 50px;
+          height: 50px;
+          bottom: 0
+        }
+
+        .nr--snowflakeAnim--4 {
+          width: 140px;
+          height: 140px;
+          right: 10%;
+          ;
+          bottom: 2%;
+        }
+
+        .nr--prizeAnim--1 {
+          width: 180px;
+          height: 100px;
+          left: 45%;
+        }
+
+        .nr--prizeAnim--2 {
+          width: 300px;
+          height: 380px;
+          top: -18%;
+          left: -10%;
+        }
+
+        .nr--prizeAnim--3 {
+          left: 20%;
+          width: 140px;
+          height: 120px;
+        }
+
+        .nr--prizeAnim--4 {
+          width: 220px;
+          height: 200px;
+          bottom: 36%;
+          right: 0;
+        }
+
+        .nr--prizeAnim--5 {
+          display: none;
+        }
+
+        .nr--prizeAnim--6 {
+          width: 360px;
+          height: 330px;
+          right: 15%;
+          z-index: 20;
+        }
+      }
+
+      @media (max-width: 450px) {
+        .ky--game__top_center {
+          height: 420px;
+        }
+
+        .nr--snowflakeAnim--1 {
+          left: -35%;
+        }
+
+        .nr--prizeAnim--2 {
+          width: 270px;
+          height: 300px;
+        }
+
+        .nr--prizeAnim--4 {
+          right: -16%;
+        }
+
+        .nr--prizeAnim--6 {
+          width: 330px;
+          height: 300px;
+          right: 10px;
+        }
+      }
+    </style>
+    <!--End of Анимация Новогодний розыгрыш 2024-->
+
+    <style>
+      .ky--game__top {
+        padding-top: 72px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+      }
+
+      .ky--game__h1_plashka {
+        height: 0.8em;
+        object-fit: contain;
+        vertical-align: baseline;
+      }
+
+      .ky--game__top .ky--game__h3 {
+        margin-top: 25px;
+      }
+
+      .ky--game__headers_img {
+        display: block;
+        height: 50px;
+        margin-top: 25px;
+        margin-bottom: 52px;
+        position: relative;
+      }
+
+      .ky--game__headers_img img {
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .ky--game__top_center {
+        grid-row: 2 / 2;
+        position: relative;
+      }
+
+      .ky--game__top_img {
+        display: flex;
+        width: 160%;
+        margin: auto;
+        transform: translate(-20%);
+        margin-top: -120px;
+      }
+
+      .ky--game__top_img img {
+        width: 100%;
+        object-fit: contain;
+      }
+
+      .ky--game__top_btn {
+        width: 176px;
+        grid-row: span 2;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 12%;
+      }
+
+      .ky--game__top_btn img {
+        width: 100%;
+        object-fit: contain;
+      }
+
+      @media (max-width: 1919px) {
+        .ky--game__top {
+          /*  margin-bottom: 197px;*/
+        }
+
+        .ky--game__headers_img {
+          height: 38px;
+          margin-top: 0;
+          margin-bottom: 40px;
+        }
+
+        .ky--game__top_btn {
+          width: 132px;
+        }
+
+        .ky--game__top .ky--game__h3 {
+          margin-top: 14px;
+        }
+      }
+
+      @media (max-width: 1439px) {
+        .ky--game__top {
+          padding-top: 56px;
+        }
+
+        .ky--game__top_headers {
+          margin-top: 0;
+        }
+
+        .ky--game__top .ky--game__h3 {
+          margin-top: 10px;
+          font-size: 16px;
+          line-height: 24px;
+          max-width: 510px;
+        }
+
+        .ky--game__top_btn {
+          width: 94px;
+        }
+
+        .ky--game__headers_img {
+          height: 29px;
+          margin-bottom: 30px;
+        }
+      }
+
+      @media (max-width: 1023px) {
+        .ky--game__top_headers {
+          position: relative;
+        }
+
+        .ky--game__top {
+          padding-top: 64px;
+        }
+
+        .ky--game__top_btn {
+          width: 197px;
+          margin-top: -9%;
+          margin-bottom: 0;
+        }
+
+        .ky--game__headers_img {
+          height: 27px;
+          margin-bottom: 38px;
+        }
+
+        .ky--game__top_img {
+          margin-top: -80px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .ky--game__top_headers {
+          top: 0;
+          width: 100%;
+        }
+
+        .ky--game__top .ky--game__h3 {
+          margin-top: 20px;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: -0.48px;
+          max-width: 300px;
+        }
+
+        .ky--game__top {
+          padding-top: 60px;
+          display: flex;
+          /* align-items: center; */
+          justify-content: center;
+          flex-direction: column;
+          margin-bottom: 55px;
+        }
+
+        .ky--game__top_headers .ky--game__h1 {
+          position: initial;
+        }
+
+        .ky--game__top_img {
+          position: initial;
+          height: auto;
+          width: 100%;
+          padding: 0;
+          margin: 0 auto;
+          transform: none;
+        }
+
+        .ky--game__top_img img {
+          /* position: initial; */
+          width: 160%;
+          margin: auto;
+          max-width: 160%;
+          transform: translate(-20%, 0);
+        }
+
+        .ky--game__top_img.js-game__mp {
+          width: 51%;
+          margin-bottom: 30px;
+          transform: translate(15%, 10%);
+        }
+
+        .ky--game__headers_img {
+          margin-bottom: 18px;
+        }
+
+        .ky--game__top_link {
+          padding: 14px 16px;
+          width: 100%;
+          display: flex;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: #1551e5;
+          font-size: 14px;
+          font-style: italic;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          /* border-radius: 8px; */
+          background: #f7faff;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          /*filter: drop-shadow(2px 4px 6px #07287b);*/
+        }
+
+        .ky--game__top_link img {
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    </style>
+
+    <div class="ky--game__top">
+      <div class="ky--game__top_headers sm-html-pad">
+        <h1 class="ky--game__h1">
+          Новогодний розыгрыш в&nbsp;приложении!
+        </h1>
+        <h3 class="ky--game__h3">
+          Участвуйте с&nbsp;2 по&nbsp;24 декабря и&nbsp;выигрывайте призы!
+        </h3>
+      </div>
+      <div class="ky--game__top_center">
+        <picture class="nr_top-image">
+          <img
+            src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/qr-top2.svg" />
+        </picture>
+        <div class="nr__top_snowflake">
+          <div class="nr--snowflakeAnim nr--snowflakeAnim--1"></div>
+          <div class="nr--snowflakeAnim nr--snowflakeAnim--2"></div>
+          <div class="nr--snowflakeAnim nr--snowflakeAnim--3"></div>
+          <div class="nr--snowflakeAnim nr--snowflakeAnim--4"></div>
+        </div>
+        <div class="nr__top_prize">
+          <div class="nr--prizeAnim nr--prizeAnim--1"></div>
+          <div class="nr--prizeAnim nr--prizeAnim--2"></div>
+          <div class="nr--prizeAnim nr--prizeAnim--3"></div>
+          <div class="nr--prizeAnim nr--prizeAnim--4"></div>
+          <div class="nr--prizeAnim nr--prizeAnim--5"></div>
+          <div class="nr--prizeAnim nr--prizeAnim--6"></div>
+        </div>
+        <!--
+          <picture class="ky--game__top_img js-anim shifted js-game__mpn1">
+            <source
+              srcset="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/top-m.webp"
+              media="(max-width: 640px)">
+            <img
+              src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/top.webp" />
+          </picture>-->
+      </div>
+      <div class="sm-html-pad">
+        <a class="ky--game__swiper_btn-mv ky--game__mv js-game__mpn"
+          href="https://sportmaster.onelink.me/wSOs/fwcvrwwr">
+          <img
+            src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/buttons-row.webp"
+            alt="App Store" />
+        </a>
+        <a href="sportmaster://bday" class="ky--game__top_link ky--game__mv js-game__mp">
+          <img
+            src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/30109114_30_05/ticket-big.svg"
+            alt="" />
+          <span>Скорее в игру</span>
+        </a>
+      </div>
+    </div>
+    <!-- end top banner -->
+
+    <!-- start призы -->
+    <div class="sm-html-pad sm-html-pad-m0">
+      <style>
+        .ky--game__b2_header {
+          display: flex;
+          flex-direction: column;
+          margin: auto;
+          margin-bottom: 60px;
+          /* max-width: 1110px; */
+          gap: 24px;
+        }
+
+        .ky--game__b2_header-flex {
+          display: flex;
+          gap: 11px;
+        }
+
+        .ky--game__b2_header-img2 {
+          height: 31px;
+          object-fit: contain;
+          margin: auto;
+        }
+
+        .ky--game__h2--dv2 {
+          display: none;
+        }
+
+        .ky--game__b2 .ky--game__h3 {
+          margin-top: 50px;
+          margin-bottom: 18px;
+        }
+
+        .ky--game__slider--prize {
+          position: relative;
+        }
+
+        .ky--game__swiper-prize .swiper-wrapper {
+          height: auto;
+        }
+
+        .ky--game__slider--prize .swiper-button-prev,
+        .ky--game__slider--prize .swiper-button-next {
+          top: var(--swiper-navigation-top-offset, 52%);
+        }
+
+        .ky--game__slider--prize .swiper-button-next {
+          right: var(--swiper-navigation-sides-offset, -33.5px) !important;
+        }
+
+        .ky--game__slider--prize .swiper-button-prev {
+          left: var(--swiper-navigation-sides-offset, -33.5px) !important;
+        }
+
+        .ky--game__slider--prize .swiper-horizontal>.swiper-pagination-bullets,
+        .ky--game__slider--prize .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .ky--game__slider--prize .swiper-pagination-custom,
+        .ky--game__slider--prize .swiper-pagination-fraction {
+          bottom: var(--swiper-pagination-bottom, -40px);
+        }
+
+        .ky--game__b2_content-wr {
+          border-radius: 180px 0 180px 0;
+          overflow: hidden;
+          will-change: transform;
+        }
+
+        .ky--game__b2_content {
+          display: grid;
+          grid-template-columns: repeat(12, 1fr);
+          grid-template-rows: repeat(4, auto);
+          grid-auto-flow: dense;
+        }
+
+        .ky--game__b2_content-item {
+          position: relative;
+          overflow: hidden;
+          display: flex;
+        }
+
+        .ky--game__b2_content-item picture {
+          display: flex;
+          width: 100%;
+          height: 100%;
+        }
+
+        .ky--game__b2_content-item:hover .ky--game__b2_img {
+          z-index: 1;
+          transform: scale(1.05);
+        }
+
+        .ky--game__b2_content-item a {
+          text-decoration: none;
+          display: flex;
+          height: 100%;
+          width: 100%;
+        }
+
+        .ky--game__b2_content-item:nth-child(1) {
+          grid-column: 1/8;
+        }
+
+        .ky--game__b2_content-item:nth-child(2) {
+          grid-column: 8/13;
+        }
+
+        .ky--game__b2_content-item:nth-child(3) {
+          grid-column: 1 / 7;
+        }
+
+        .ky--game__b2_content-item:nth-child(4) {
+          grid-column: 7/ 13;
+        }
+
+        .ky--game__b2_content-item:nth-child(5) {
+          grid-column: 1 / 7;
+        }
+
+        .ky--game__b2_content-item:nth-child(6) {
+          grid-column: 7/ 13;
+        }
+
+        .ky--game__b2_content-item:nth-child(7) {
+          grid-column: 1 / 8;
+        }
+
+        .ky--game__b2_content-item:nth-child(8) {
+          grid-column: 8 / 13;
+        }
+
+        .ky--game__b2_img {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: all 0.3s ease;
+        }
+
+        .ky--game__b2_content-text {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          padding: 16px 22px;
+          max-width: 380px;
+          z-index: 5;
+        }
+
+        .ky--game__b2_content-item:nth-child(1) .ky--game__b2_content-text,
+        .ky--game__b2_content-item:nth-child(2) .ky--game__b2_content-text {
+          padding: 30px 22px;
+          bottom: 0;
+        }
+
+        .ky--game__b2_content-text1 {
+          font-family: 'SMSans', sans-serif;
+          color: #fff;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 36px;
+          text-transform: uppercase;
+        }
+
+        .ky--game__b2_content-text2 {
+          font-family: 'SMSans', sans-serif;
+          color: #fff;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          /* text-transform: uppercase; */
+        }
+
+        @media (max-width: 1919px) {
+
+          .ky--game__b2_content-wr {
+            border-radius: 80px 0 80px 0;
+          }
+
+          .ky--game__h2--dv2 {
+            display: block;
+          }
+
+          .ky--game__b2_header {
+            max-width: 87%;
+            margin-bottom: 52px;
+          }
+
+          .ky--game__b2_content-text1 {
+            font-size: 10.46px;
+            line-height: normal;
+          }
+
+          .ky--game__b2_content-text2 {
+            font-size: 15px;
+            line-height: 19.425px;
+          }
+
+          .ky--game__b2 .ky--game__h3 {
+            margin-top: 20px;
+            margin-bottom: 33px;
+          }
+
+          .ky--game__b2_content-text {
+            padding: 16px 22px;
+          }
+
+          .ky--game__slider--prize .swiper-button-prev,
+          .ky--game__slider--prize .swiper-button-next {
+            top: var(--swiper-navigation-top-offset, 54%);
+          }
+
+          .ky--game__slider--prize .swiper-button-next {
+            right: var(--swiper-navigation-sides-offset, -25px) !important;
+          }
+
+          .ky--game__slider--prize .swiper-button-prev {
+            left: var(--swiper-navigation-sides-offset, -25px) !important;
+          }
+        }
+
+        @media (max-width: 1439px) {
+          .ky--game__b2_header {
+            margin-bottom: 34px;
+            max-width: 100%;
+          }
+
+          .ky--game__b2 .ky--game__h3 {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.48px;
+            margin-top: 10px;
+          }
+
+          .ky--game__b2_header-flex {
+            gap: 9px;
+          }
+
+          .ky--game__b2_header-img2 {
+            height: 21px;
+          }
+
+          .ky--game__b2_content-text1 {
+            font-size: 12px;
+          }
+
+          .ky--game__b2_content-text2 {
+            font-size: 14px;
+            line-height: 18px;
+          }
+
+          .ky--game__b2_content-text {
+            padding: 16px;
+            max-width: 240px;
+          }
+
+          .ky--game__slider--prize .swiper-button-prev,
+          .ky--game__slider--prize .swiper-button-next {
+            top: var(--swiper-navigation-top-offset, 56%);
+          }
+        }
+
+        @media (max-width: 1023px) {
+          .ky--game__b2 .ky--game__h3 {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.5px;
+            margin-top: 23px;
+            margin-bottom: 10px;
+          }
+
+          .ky--game__b2_header {
+            gap: 14px;
+            max-width: 96%;
+          }
+
+          .ky--game__b2_content-wr {
+            border-radius: 60px 0 60px 0;
+          }
+
+          .ky--game__b2_header-flex {
+            flex-wrap: wrap;
+            gap: 6px;
+          }
+
+          .ky--game__b2_content-text1 {
+            font-size: 10px;
+          }
+
+          .ky--game__b2_content-text2 {
+            font-size: 12px;
+            line-height: 16px;
+          }
+
+          .ky--game__b2_content-text {
+            gap: 0;
+            padding: 13px;
+          }
+
+          .ky--game__slider--prize .swiper-button-next {
+            right: var(--swiper-navigation-sides-offset, -20px) !important;
+          }
+
+          .ky--game__slider--prize .swiper-button-prev {
+            left: var(--swiper-navigation-sides-offset, -20px) !important;
+          }
+
+          .ky--game__b2_content-item:nth-child(1) .ky--game__b2_content-text,
+          .ky--game__b2_content-item:nth-child(2) .ky--game__b2_content-text {
+            padding: 13px;
+          }
+
+          .ky--game__b2_header-img2 {
+            height: 15px;
+          }
+        }
+
+        @media (max-width: 640px) {
+          .ky--game__b2_header {
+            position: relative;
+            padding: 0 16px;
+            margin-bottom: 40px;
+            flex-direction: column;
+            gap: 24px;
+          }
+
+          .ky--game__b2 .ky--game__h3 {
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.42px;
+            margin-top: 20px;
+            margin-bottom: 9px;
+          }
+
+          .ky--game__slider--prize {
+            margin-left: 14px;
+          }
+
+          .ky--game__b2_content-wr {
+            border-radius: 0;
+          }
+
+          .swiper-slide:first-of-type .ky--game__b2_content-wr {
+            border-radius: 40px 0px 0px 0px;
+          }
+
+          .swiper-slide:last-of-type .ky--game__b2_content-wr {
+            border-radius: 0px 0px 40px 0px;
+          }
+
+          .ky--game__b2_header-flex {
+            gap: 8px;
+          }
+
+          .ky--game__b2_header-img2 {
+            height: 27px;
+          }
+
+          .js-game-prize2 .swiper-wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+          }
+
+          .js-game-prize2 .swiper-slide .ky--game__b2_content {
+            display: block;
+          }
+
+          .ky--game__b2_content-text {
+            max-width: 100%;
+            top: 0;
+            left: 0;
+            bottom: initial;
+            padding: 18px 18px !important;
+          }
+
+          #js-game-prize2,
+          #js-game-prize3 {
+            left: 1%;
+            bottom: -27px;
+            z-index: 50;
+            cursor: pointer;
+
+            width: 39px;
+            height: 3px;
+            margin: 0 auto 0;
+            background: none;
+            position: relative;
+            overflow-x: hidden;
+            border-radius: 0;
+          }
+
+          #js-game-prize2 .swiper-scrollbar-drag,
+          #js-game-prize3 .swiper-scrollbar-drag {
+            background: #89aaff;
+            border-radius: 0;
+          }
+
+          #js-game-prize2 .swiper-scrollbar-drag::before,
+          #js-game-prize3 .swiper-scrollbar-drag::before {
+            content: "";
+            position: absolute;
+            width: 100vw;
+            top: 0;
+            bottom: 0;
+            margin: 0 3px;
+            background: #e3e3e3;
+          }
+
+          #js-game-prize2 .swiper-scrollbar-drag::before,
+          #js-game-prize3 .swiper-scrollbar-drag::before {
+            right: 100%;
+          }
+
+          #js-game-prize2 .swiper-scrollbar-drag::after,
+          #js-game-prize3 .swiper-scrollbar-drag::after {
+            content: "";
+            position: absolute;
+            width: 100vw;
+            top: 0;
+            bottom: 0;
+            margin: 0 3px;
+            background: #e3e3e3;
+          }
+
+          #js-game-prize2 .swiper-scrollbar-drag::after,
+          #js-game-prize3 .swiper-scrollbar-drag::after {
+            left: 100%;
+          }
+        }
+      </style>
+
+      <section class="ky--game__b2 ky--mb">
+        <div class="ky--game__b2_header">
+          <h2 class="ky--game__h2">26 декабря в прямом эфире проведем розыгрыш призов среди самых активных участников
+          </h2>
+
+          <div class="ky--game__b2_header-flex">
+            <img class="ky--game__b2_header-img2"
+              src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/bage-n.svg"
+              alt="26 декабря 18:00" />
+
+          </div>
+        </div>
+
+        <div class="ky--game__slider ky--game__slider--prize">
+          <div class="swiper ky--game__swiper-prize js-game-prize ky--game__mvn">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="ky--game__b2_content-wr">
+                  <div class="ky--game__b2_content">
+                    <article class="ky--game__b2_content-item">
+                      <div class="ky--game__b2_content-text">
+                        <span class="ky--game__b2_content-text1">Apple</span>
+                        <span class="ky--game__b2_content-text2">iPhone 16 Pro</span>
+                      </div>
+                      <img class="ky--game__b2_img"
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/card1-n.webp" />
+                    </article>
+
+                    <article class="ky--game__b2_content-item">
+                      <div class="ky--game__b2_content-text">
+                        <span class="ky--game__b2_content-text1">Dyson</span>
+                        <span class="ky--game__b2_content-text2">Стайлер Dyson Airwrap<br> HS05 Complete Long</span>
+                      </div>
+                      <img class="ky--game__b2_img"
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/card2.webp" />
+                    </article>
+
+                    <article class="ky--game__b2_content-item">
+                      <div class="ky--game__b2_content-text">
+                        <span class="ky--game__b2_content-text1">KETTLER</span>
+                        <span class="ky--game__b2_content-text2">Велотренажер</span>
+                      </div>
+                      <img class="ky--game__b2_img"
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/card3-nn.webp" />
+
+                    </article>
+
+                    <article class="ky--game__b2_content-item">
+                      <div class="ky--game__b2_content-text">
+                        <span class="ky--game__b2_content-text1">SONY</span>
+                        <span class="ky--game__b2_content-text2">Игровая приставка<br> Sony PlayStation&nbsp;5</span>
+                      </div>
+                      <img class="ky--game__b2_img"
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/card4.webp" />
+                    </article>
+
+                    <article class="ky--game__b2_content-item">
+                      <div class="ky--game__b2_content-text">
+                        <span class="ky--game__b2_content-text1">Fischer</span>
+                        <span class="ky--game__b2_content-text2">Беговые лыжи<br> Fischer LS Skate IFP</span>
+                      </div>
+                      <img class="ky--game__b2_img"
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/card5.webp" />
+                    </article>
+
+                    <article class="ky--game__b2_content-item">
+                      <div class="ky--game__b2_content-text">
+                        <span class="ky--game__b2_content-text1">Rossignol</span>
+                        <span class="ky--game__b2_content-text2">Сноуборд</span>
+                      </div>
+                      <img class="ky--game__b2_img"
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/card6.webp" />
+                    </article>
+
+                    <article class="ky--game__b2_content-item">
+                      <div class="ky--game__b2_content-text">
+                        <span class="ky--game__b2_content-text1">Nika</span>
+                        <span class="ky--game__b2_content-text2">Cанки Nikki&nbsp;3</span>
+                      </div>
+                      <img class="ky--game__b2_img"
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/card7.webp" />
+                    </article>
+
+                    <article class="ky--game__b2_content-item">
+                      <div class="ky--game__b2_content-text">
+                        <span class="ky--game__b2_content-text1">Яндекс</span>
+                        <span class="ky--game__b2_content-text2">Умная колонка Яндекс<br> Станция Лайт</span>
+                      </div>
+                      <img class="ky--game__b2_img"
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/card8-n.webp" />
+                    </article>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="swiper ky--game__swiper-prize js-game-prize2 ky--game__mv">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="ky--game__b2_content-wr">
+                  <div class="ky--game__b2_content">
+                    <article class="ky--game__b2_content-item">
+                      <div class="ky--game__b2_content-text">
+                        <span class="ky--game__b2_content-text1">Apple</span>
+                        <span class="ky--game__b2_content-text2">iPhone 16 Pro </span>
+                      </div>
+                      <img class="ky--game__b2_img"
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/card1-mnn.webp" />
+                    </article>
+
+                    <article class="ky--game__b2_content-item">
+                      <div class="ky--game__b2_content-text">
+                        <span class="ky--game__b2_content-text1">KETTLER</span>
+                        <span class="ky--game__b2_content-text2">Велотренажер</span>
+                      </div>
+                      <img class="ky--game__b2_img"
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/card3-mn.webp" />
+                    </article>
+
+                    <article class="ky--game__b2_content-item">
+                      <div class="ky--game__b2_content-text">
+                        <span class="ky--game__b2_content-text1">Fischer</span>
+                        <span class="ky--game__b2_content-text2">Беговые лыжи<br> Fischer LS Skate IFP</span>
+                      </div>
+                      <img class="ky--game__b2_img"
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/card5-m.webp" />
+                    </article>
+
+                    <article class="ky--game__b2_content-item">
+                      <div class="ky--game__b2_content-text">
+                        <span class="ky--game__b2_content-text1">Nika</span>
+                        <span class="ky--game__b2_content-text2">Cанки Nikki 3</span>
+                      </div>
+                      <img class="ky--game__b2_img"
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/card7-m.webp" />
+                    </article>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="ky--game__b2_content-wr">
+                  <div class="ky--game__b2_content">
+
+                    <article class="ky--game__b2_content-item">
+                      <div class="ky--game__b2_content-text">
+                        <span class="ky--game__b2_content-text1">Dyson</span>
+                        <span class="ky--game__b2_content-text2">Стайлер Dyson Airwrap<br> HS05 Complete Long</span>
+                      </div>
+                      <img class="ky--game__b2_img"
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/card2-m.webp" />
+                    </article>
+
+                    <article class="ky--game__b2_content-item ky--game__b2_content-item--sup">
+                      <div class="ky--game__b2_content-text">
+                        <span class="ky--game__b2_content-text1">SONY</span>
+                        <span class="ky--game__b2_content-text2">Игровая приставка<br> Sony PlayStation&nbsp;5</span>
+                      </div>
+                      <img class="ky--game__b2_img"
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/card4-m.webp" />
+                    </article>
+
+                    <article class="ky--game__b2_content-item ky--game__b2_content-item--sup">
+                      <div class="ky--game__b2_content-text">
+                        <span class="ky--game__b2_content-text1">Rossignol</span>
+                        <span class="ky--game__b2_content-text2">Сноуборд</span>
+                      </div>
+                      <img class="ky--game__b2_img"
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/card6-m.webp" />
+                    </article>
+
+                    <article class="ky--game__b2_content-item ky--game__b2_content-item--sup">
+                      <div class="ky--game__b2_content-text">
+                        <span class="ky--game__b2_content-text1">Яндекс</span>
+                        <span class="ky--game__b2_content-text2">Умная колонка Яндекс<br> Станция Лайт</span>
+                      </div>
+                      <img class="ky--game__b2_img"
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/card8-mn.webp" />
+                    </article>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="ky--game__swiper_navigation ky--game__swiper_navigation2 ky--game__mvn">
+          <div class="swiper-button-prev">
+            <svg class="ky--animPulse" viewBox="0 0 67 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="33.5" cy="34.3979" r="33.5" fill="white" />
+              <path d="M33.5003 21.2896L46.609 34.3983L33.5003 47.507M44.9907 34.3983L19.9061 34.3983" stroke="#1551E5"
+                stroke-width="2.18478" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next">
+            <svg class="ky--animPulse" viewBox="0 0 67 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="33.5" cy="34.3979" r="33.5" fill="white" />
+              <path d="M33.5003 21.2896L46.609 34.3983L33.5003 47.507M44.9907 34.3983L19.9061 34.3983" stroke="#1551E5"
+                stroke-width="2.18478" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+        <div class="swiper-scrollbar swiper-scrollbar-popular ky--game__mv" id="js-game-prize2"></div>
+      </section>
+    </div>
+    <!-- end призы -->
+
+    <!-- start как выиграть -->
+    <div class="sm-html-pad sm-html-pad-m0">
+      <style>
+        .dnp_image_responsive {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+
+        .dnp_sl-1 {
+          max-width: 68%;
+          position: relative;
+          bottom: -50%;
+          left: 0;
+        }
+
+        .dnp_sl-2 {
+          max-width: 76%;
+          position: relative;
+          bottom: -12%;
+          left: 10%;
+        }
+
+        .dnp_sl-3 {
+          max-width: 68%;
+          position: relative;
+          bottom: -12%;
+          left: 12%;
+        }
+
+        .dnp_sl-4 {
+          max-width: 68%;
+          position: relative;
+          bottom: -12%;
+          left: -12%;
+        }
+
+        .ky--game__b4 {
+          /* padding-top: 153px; */
+          margin-bottom: 230px;
+        }
+
+        .ky--game__slider-wr {
+          margin-top: 72px;
+          position: relative;
+        }
+
+        .ky--game__b4_bg {
+          width: 100%;
+          object-fit: contain;
+          padding-right: 50px;
+        }
+
+        .ky--game__slider--guide {
+          /* position: absolute;
+          top: 220px;
+          left: 50%;
+          transform: translateX(-50%); */
+          width: 100%;
+          height: fit-content;
+        }
+
+        .ky--game__swiper {
+          width: 76.6%;
+          height: 583px;
+        }
+
+        .ky--game__swiper .swiper-slide {
+          background: #fff;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center right 57px;
+          border-radius: 60px;
+        }
+
+        .ky--game__slider--guide .swiper-slide {
+          overflow: hidden;
+          /* background-position: center right; */
+          background-position: right bottom, center center;
+        }
+
+        .ky--game__swiper .swiper-slide:nth-child(1) {
+          background-image: url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/bg-card1.webp), url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/30109114_30_05/1.svg);
+        }
+
+        .ky--game__swiper .swiper-slide:nth-child(2) {
+          background-image: url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/bg-card2.webp), url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/30109114_30_05/2.svg);
+          background-size: 80%, contain;
+          background-position: right -30% top -70px, center;
+        }
+
+        .ky--game__swiper .swiper-slide:nth-child(3) {
+          background-image: url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/bg-card3-n.webp), url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/30109114_30_05/3.svg);
+          background-position: right -10% bottom -70px, center;
+        }
+
+        .ky--game__swiper .swiper-slide:nth-child(4) {
+          background-image: url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/bg-card4.webp), url(https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/30109114_30_05/4.svg);
+          background-size: 50%, contain;
+        }
+
+        .ky--game__swiper_content {
+          /* padding: 60px 57px; */
+          padding: 60px 26px 64px 54px;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+
+        .ky--game__swiper .swiper-slide:nth-child(1) .ky--game__swiper_content {
+          max-width: 696px;
+          width: 94%;
+        }
+
+        .ky--game__swiper .swiper-slide:nth-child(2) .ky--game__swiper_content {
+          max-width: 590px;
+        }
+
+        .ky--game__swiper .swiper-slide:nth-child(3) .ky--game__swiper_content {
+          max-width: 615px;
+        }
+
+        .ky--game__swiper .swiper-slide:nth-child(4) .ky--game__swiper_content {
+          max-width: 676px;
+        }
+
+        .ky--game__swiper_h {
+          font-family: 'SMSans', sans-serif;
+          color: #0040f9;
+          font-size: 35px;
+          font-style: italic;
+          font-weight: 700;
+          line-height: 42px;
+          letter-spacing: -0.01em;
+
+          /* text-transform: uppercase; */
+          margin: 0;
+        }
+
+        .ky--game__swiper_text {
+          font-family: 'SMSans', sans-serif;
+          color: #0040f9;
+          font-size: 16px;
+          line-height: 26px;
+          display: block;
+        }
+
+        .ky--game__swiper_text,
+        .ky--game__swiper .swiper-slide:nth-child(4) ul.ky--game__swiper_text {
+          margin-top: 25px;
+          margin-bottom: 35px;
+        }
+
+        .ky--game__swiper .swiper-slide:nth-child(4) ul.ky--game__swiper_text {
+          margin-top: 0 !important;
+          padding-left: 1.5em;
+          list-style-type: disc;
+        }
+
+        .ky--game__swiper .swiper-slide:nth-child(4) .ky--game__swiper_text {
+          margin-bottom: 0;
+        }
+
+        .ky--game__swiper_text i,
+        .ky--game__swiper_text i a {
+          color: #000;
+        }
+
+        .ky--game__swiper_btn {
+          height: 200px;
+          object-fit: contain;
+        }
+
+        .ky--game__swiper_svg {
+          width: 32px;
+          object-fit: contain;
+          vertical-align: middle;
+          filter: drop-shadow(0px 0px 17px rgba(0, 64, 249, 0.33));
+        }
+
+        .ky--game__slider .swiper-button-next,
+        .ky--game__slider .swiper-button-prev {
+          width: 67px;
+          height: 67px;
+          -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+          -webkit-tap-highlight-color: transparent;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          transition: all 0.3s ease;
+        }
+
+        .ky--game__slider .swiper-button-next svg,
+        .ky--game__slider .swiper-button-prev svg {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+          -webkit-tap-highlight-color: transparent;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          background: #35c6f8ff;
+          border-radius: 50%;
+        }
+
+        .ky--game__slider .swiper-button-prev {
+          left: var(--swiper-navigation-sides-offset, 0);
+          right: auto;
+          transform: rotate(180deg);
+        }
+
+        .ky--game__slider .swiper-button-next {
+          right: var(--swiper-navigation-sides-offset, 0);
+          left: auto;
+        }
+
+        .ky--game__slider .swiper-button-next::after,
+        .ky--game__slider .swiper-button-prev::after {
+          content: "";
+          position: absolute;
+          top: 64%;
+          left: 22%;
+          transform: translate(-50%, -50%);
+          display: block;
+          width: 120%;
+          height: 120%;
+          border-radius: 50%;
+          z-index: -1;
+          -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+          -webkit-tap-highlight-color: transparent;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        .ky--game__slider .swiper-button-prev::after {
+          left: auto;
+          top: 36%;
+          right: -44%;
+        }
+
+        @-moz-document url-prefix() {
+          .ky--game__slider .swiper-button-prev::after {
+            filter: drop-shadow(10px 9px 20px #3862f5);
+          }
+        }
+
+        .ky--game__slider .swiper-button-disabled.swiper-button-next::after,
+        .ky--game__slider .swiper-button-disabled.swiper-button-prev::after {
+          top: 50%;
+          left: 50%;
+          width: 100%;
+          height: 100%;
+          background: rgba(255, 255, 255, 0.2);
+          backdrop-filter: blur(7.5px);
+        }
+
+        .ky--game__slider .swiper-button-next.swiper-button-disabled,
+        .ky--game__slider .swiper-button-prev.swiper-button-disabled {
+          opacity: 1;
+          cursor: not-allowed;
+          pointer-events: auto;
+        }
+
+        .ky--game__slider .swiper-button-next.swiper-button-disabled svg,
+        .ky--game__slider .swiper-button-prev.swiper-button-disabled svg {
+          fill: none;
+          background: rgba(53, 198, 248, 0.4);
+          box-shadow: 0px 0px 22.409px 0px #02FEE0;
+        }
+
+        .ky--game__slider .swiper-button-next.swiper-button-disabled svg circle,
+        .ky--game__slider .swiper-button-prev.swiper-button-disabled svg circle {
+          fill: none;
+        }
+
+        .ky--game__slider .swiper-button-next.swiper-button-disabled svg path,
+        .ky--game__slider .swiper-button-prev.swiper-button-disabled svg path {
+          stroke: white;
+        }
+
+        .ky--game__swiper_navigation .swiper-pagination-bullet {
+          background: #fff;
+          opacity: 1;
+        }
+
+        .ky--game__swiper_navigation .swiper-pagination-bullet.swiper-pagination-bullet-active {
+          background: #000;
+        }
+
+        .ky--game__swiper_navigation .swiper-pagination-horizontal {
+          /* bottom: var(--swiper-pagination-bottom, -40px); */
+          bottom: -15%;
+        }
+
+        .ky--game__slider--guide .swiper-slide {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .ky--game__swiper_content-mobile {
+          position: relative;
+          height: 100%;
+          max-height: 100%;
+        }
+
+        .ky--game__swiper_content-mobile .ky--game__top_img {
+          width: 100%;
+          height: 100%;
+          transform: translate(0, 0);
+          display: block;
+        }
+
+        /* Pulse animation  */
+        .ky--animPulse {
+          animation-name: pulse;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: ease;
+        }
+
+        .ky--animPulse:hover,
+        .swiper-button-disabled .ky--animPulse {
+          animation: none;
+        }
+
+        @keyframes pulse {
+          0% {
+            scale: 1;
+          }
+
+          90% {
+            scale: 1;
+          }
+
+          100% {
+            scale: 1.2;
+          }
+        }
+
+        @media (max-width: 1919px) {
+          .ky--game__b4 {
+            padding-top: 110px;
+            margin-bottom: 174px;
+          }
+
+          .ky--game__slider-wr {
+            /* margin-top: -120px; */
+            margin-top: 56px;
+          }
+
+          .ky--game__slider--guide {
+            top: 155px;
+          }
+
+          .ky--game__swiper {
+            height: 30.28vw;
+          }
+
+          .ky--game__swiper .swiper-slide {
+            border-radius: 45px;
+          }
+
+          .ky--game__swiper_content {
+            padding: 45px;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(1) .ky--game__swiper_content {
+            max-width: 434px;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(2) .ky--game__swiper_content {
+            max-width: 450px;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(3) .ky--game__swiper_content {
+            max-width: 515px;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(4) .ky--game__swiper_content {
+            max-width: 525px;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(1) .ky--game__swiper_btn {
+            height: 104px;
+          }
+
+          .ky--game__swiper_h {
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -0.01em;
+          }
+
+          .ky--game__swiper_text {
+            font-size: 14px;
+            line-height: 18px;
+            margin-top: 16px;
+            margin-bottom: 20px;
+          }
+
+          .ky--game__slider .swiper-button-next,
+          .ky--game__slider .swiper-button-prev {
+            width: 50px;
+            height: 50px;
+          }
+
+          .dnp_sl-1 {
+            left: 30%;
+            max-width: 55%;
+          }
+
+          .ky--game__swiper_btn {
+            height: 172px;
+          }
+
+          .dnp_sl-2 {
+            max-width: 68%;
+            bottom: -10%;
+            left: 20%;
+          }
+
+          .dnp_sl-3 {
+            max-width: 66%;
+            bottom: -10%;
+            left: 0;
+          }
+
+          .dnp_sl-4 {
+            max-width: 66%;
+            bottom: -10%;
+            left: 0;
+          }
+        }
+
+        @media (max-width: 1439px) {
+          .ky--game__swiper .swiper-slide:nth-child(1) .ky--game__swiper_btn {
+            height: 82px;
+          }
+
+          .ky--game__b4 {
+            padding-top: 0px;
+            margin-bottom: 135px;
+          }
+
+          .ky--game__b4_bg {
+            padding-right: 0;
+          }
+
+          .ky--game__slider-wr {
+            /* margin-top: -60px; */
+            margin-top: 42px;
+          }
+
+          .ky--game__slider--guide {
+            top: 90px;
+          }
+
+          .ky--game__swiper {
+            width: 82.7%;
+            height: 46vw;
+          }
+
+          .ky--game__swiper .swiper-slide {
+            border-radius: 38px;
+          }
+
+          .ky--game__swiper_content {
+            padding: 40px 35px;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(1) {
+            background-size: 66%, contain;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(2) {
+            background-position: right -30% top 0, center;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(3) {
+            background-size: 52%, contain;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(3) .ky--game__swiper_content,
+          .ky--game__swiper .swiper-slide:nth-child(4) .ky--game__swiper_content {
+            max-width: 452px;
+          }
+
+          .ky--game__swiper_btn {
+            height: 150px;
+          }
+
+          .ky--game__swiper_text,
+          .ky--game__swiper .swiper-slide:nth-child(4) ul.ky--game__swiper_text {
+            margin-bottom: 20px;
+          }
+
+          .ky--game__swiper_h {
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -0.01em;
+          }
+
+          .ky--game__swiper_text {
+            font-size: 18px;
+            line-height: 22px;
+          }
+
+          .dnp_sl-1 {}
+
+          .dnp_sl-2 {
+            max-width: 70%;
+            bottom: -20%;
+            left: 15%;
+          }
+
+          .dnp_sl-3 {
+            bottom: -17%;
+          }
+
+          .dnp_sl-4 {
+            bottom: -17%;
+          }
+        }
+
+        @media (max-width: 1023px) {
+          .ky--game__b4_bg {
+            width: 104%;
+            margin-left: -3%;
+          }
+
+          .ky--game__slider-wr {
+            /* margin-top: -70px; */
+            margin-top: 36px;
+          }
+
+          .ky--game__slider--guide {
+            top: 95px;
+          }
+
+          .ky--game__swiper {
+            width: 81.8%;
+          }
+
+          .ky--game__swiper .swiper-slide {
+            border-radius: 30px;
+          }
+
+          .ky--game__swiper_content {
+            padding: 30px 27px;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(1) .ky--game__swiper_content,
+          .ky--game__swiper .swiper-slide:nth-child(4) .ky--game__swiper_content {
+            max-width: 335px;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(2) .ky--game__swiper_content {
+            max-width: 325px;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(3) .ky--game__swiper_content {
+            max-width: 355px;
+          }
+
+          .ky--game__swiper_h {
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -0.5px;
+          }
+
+          .ky--game__swiper_text {
+            font-size: 12px;
+            line-height: 16px;
+          }
+
+          .ky--game__swiper_text,
+          .ky--game__swiper .swiper-slide:nth-child(4) ul.ky--game__swiper_text {
+            margin-top: 13px;
+            margin-bottom: 6px;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(4) .ky--game__swiper_text {
+            margin-top: 3px;
+          }
+
+          .ky--game__swiper_btn {
+            height: 100px;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(1) .ky--game__swiper_btn {
+            height: 74px;
+          }
+
+          .ky--game__slider .swiper-button-next,
+          .ky--game__slider .swiper-button-prev {
+            width: 40px;
+            height: 40px;
+          }
+
+          .ky--game__swiper_content-mobile {
+            right: 15%;
+          }
+
+          .ky--game__top_img .dnp_sl-1 {
+            position: relative;
+            width: auto;
+            top: auto;
+            bottom: -66%;
+            left: 50%;
+          }
+
+          .dnp_sl-2 {
+            max-width: 90%;
+            bottom: -13%;
+            left: 24%;
+          }
+
+          .dnp_sl-3 {
+            max-width: 48%;
+            bottom: -14%;
+            left: 50%;
+          }
+
+          .dnp_sl-4 {
+            max-width: 47%;
+            bottom: -14%;
+            left: 50%;
+          }
+        }
+
+        @media (max-width: 640px) {
+          .ky--game__top_center {
+            /* margin-bottom: 125px; */
+            margin-bottom: 0;
+          }
+
+          .ky--game__b4 {
+            padding-top: 56px;
+            margin-bottom: 0;
+          }
+
+          .ky--game__b4 .ky--game__h2 {
+            padding-left: 14px;
+            padding-right: 14px;
+          }
+
+          .ky--game__b4_bg {
+            width: 100%;
+            margin-left: 0;
+          }
+
+          .ky--game__slider-wr {
+            margin-top: -35px;
+            padding-top: 60px;
+          }
+
+          .ky--game__slider--guide {
+            position: relative;
+            top: 0;
+            padding-bottom: 26px;
+          }
+
+          .ky--game__swiper {
+            width: 92%;
+            /* height: auto; */
+            height: 536px;
+          }
+
+          .ky--game__swiper .swiper-slide {
+            height: initial;
+            background-position: center bottom, top right;
+            background-size: contain, auto 187px;
+            border-radius: 20px;
+            padding-bottom: 30px;
+          }
+
+          .ky--game__swiper_navigation {
+            position: initial;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(1) .ky--game__swiper_content-mobile {
+            /* margin-bottom: 14px; */
+            margin-top: 35px;
+            /* left: -15%; */
+            left: 0;
+            top: auto;
+            bottom: 0px;
+
+            display: block !important;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(1) {
+            /* padding-bottom: 14px; */
+            padding-bottom: 0;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(1) .ky--game__swiper_content {
+            height: 100%;
+          }
+
+          .ky--game__slider .swiper-button-next,
+          .ky--game__slider .swiper-button-prev {
+            display: none;
+          }
+
+          .ky--game__swiper_navigation .swiper-pagination-horizontal {
+            position: initial;
+            width: auto;
+          }
+
+          .ky--game__swiper_navigation .swiper-pagination-bullet {
+            height: 4px;
+            width: 4px;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(1) {
+            background-position: center bottom, top right;
+            background-size: contain, auto 187px;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(2) {
+            background-position: left -80px bottom -100px, top right;
+            background-size: 130%, auto 187px;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(3) {
+            background-position: center bottom -60px, top right;
+            background-size: contain, auto 187px;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(4) {
+            background-position: center bottom, top right;
+            background-size: contain, auto 187px;
+          }
+
+          .ky--game__swiper_content {
+            padding: 19px 14px;
+            padding-bottom: 0;
+            max-width: 100% !important;
+            height: auto;
+          }
+
+          .ky--game__swiper_h {
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.01em;
+          }
+
+          .ky--game__swiper_h br {
+            display: none;
+          }
+
+          .ky--game__swiper_text {
+            font-size: 14px;
+            line-height: 18px;
+          }
+
+          .ky--game__swiper .swiper-slide:nth-child(4) .ky--game__swiper_text {
+            margin-top: 13px;
+          }
+
+          .ky--game__swiper_btn-mv {
+            text-decoration: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            max-width: 280px;
+          }
+
+          .ky--game__swiper_btn-mv img {
+            width: 131px;
+            object-fit: contain;
+          }
+
+          .ky--game__slider--guide .swiper-slide {
+            flex-direction: column;
+          }
+
+          .ky--game__swiper_content-mobile {
+            right: initial;
+            top: 0;
+            left: 0;
+            order: 3;
+            margin-top: 35px;
+          }
+
+          .ky--game__swiper_content-top {
+            order: 1;
+          }
+
+          .ky--game__swiper_btn-mv {
+            order: 2;
+          }
+
+          .sl-1-mobile {
+            max-width: 52%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          .ky--game__swiper_btn-mv.ky--game__mv>img {
+            width: 270px;
+          }
+
+          .ky--game__swiper_content-mobile img {
+            position: absolute;
+          }
+
+          .dnp_sl-2 {
+            left: 50%;
+            right: auto;
+            margin: auto;
+            bottom: -10px;
+            max-width: 220px;
+            transform: translateX(-50%);
+          }
+
+          .dnp_sl-3 {
+            left: 50%;
+            right: auto;
+            margin: auto;
+            bottom: -10px;
+            max-width: 115px;
+            transform: translateX(-50%);
+          }
+
+          .dnp_sl-4 {
+            left: 50%;
+            right: auto;
+            margin: auto;
+            bottom: -10px;
+            max-width: 115px;
+            transform: translateX(-50%);
+          }
+
+          .btns-padding {
+            padding: 0 14px;
+          }
+
+          .dnp_btns_mt {
+            margin-top: 30px;
+          }
+
+          .ky--game__swiper_content-mobile .ky--game__top_img {
+            position: relative;
+            transform: translate(0, 0);
+            margin: 0 auto;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+          }
+
+          .ky--game__top_img .dnp_sl-1 {
+            position: absolute;
+            left: 50%;
+            right: auto;
+            top: auto;
+            margin: auto;
+            width: 150px;
+            transform: translateX(-50%);
+            bottom: -50%;
+            max-width: 50%;
+          }
+        }
+      </style>
+
+      <section class="ky--game__b4 ky--mb">
+        <h2 class="ky--game__h2 js-game__mpn">Как выиграть призы? <br> 4 простых шага</h2>
+        <h2 class="ky--game__h2 js-game__mp">
+          Как выиграть призы? <br />
+          3&nbsp;простых шага:
+        </h2>
+        <div class="ky--game__slider-wr">
+          <div class="ky--game__slider ky--game__slider--guide">
+            <div class="swiper ky--game__swiper js-game-Swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swipe" id="js-game__mpn">
+                  <div class="ky--game__swiper_content">
+                    <div class="ky--game__swiper_content-top">
+                      <h3 class="ky--game__swiper_h">
+                        Скачайте приложение, зарегистрируйтесь или авторизуйтесь в&nbsp;нем
+                      </h3>
+                      <span class="ky--game__swiper_text">Текущим пользователям для участия необходимо обновить
+                        приложение до&nbsp;последней версии.</span>
+                    </div>
+                    <picture>
+                      <source
+                        srcset="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/30109114_30_05/s-btns-1-mobile.webp"
+                        media="(max-width: 1919px)" />
+                      <img class="ky--game__swiper_btn ky--game__mvn js-game__mpn"
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/30109114_30_05/s-btns-1.webp"
+                        alt="" />
+                    </picture>
+
+                    <div class="ky--game__swiper_content-mobile ky--game__mv js-game__mpn">
+                      <picture>
+                        <source media="(max-width: 640px)"
+                          srcset="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/tel1-m.webp">
+                        <img
+                          src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/tel1-nqr.webp"
+                          class="dnp_image_responsive sl-1-mobile" alt="app">
+                      </picture>
+                    </div>
+                    <a class="ky--game__swiper_btn-mv ky--game__mv js-game__mpn dnp_btns_mt"
+                      href="https://sportmaster.onelink.me/wSOs/fwcvrwwr">
+                      <img
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/buttons-row.webp"
+                        alt="App Store" />
+                    </a>
+                  </div>
+                  <div class="ky--game__swiper_content-mobile ky--game__mvn">
+
+                    <picture class="ky--game__top_img js-anim shifted js-game__mpn1">
+                      <source
+                        srcset="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/tel-mn.webp"
+                        media="(max-width: 767px)">
+                      <img
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/tel1-nqr.webp"
+                        class="dnp_image_responsive dnp_sl-1" alt="">
+                    </picture>
+                  </div>
+                </div>
+
+                <div class="swiper-slide swipe">
+                  <div class="ky--game__swiper_content">
+                    <div class="ky--game__swiper_content-top">
+                      <h3 class="ky--game__swiper_h">Зарегистрируйтесь в&nbsp;игре</h3>
+                      <span class="ky--game__swiper_text">
+                        Нажмите на&nbsp;значок
+                        <img class="ky--game__swiper_svg"
+                          src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2023/news/43049320_26_09/tapbar.svg"
+                          alt="" />,
+                        перейдите в&nbsp;раздел «Новогодний розыгрыш» и зарегистрируйтесь в&nbsp;игре. Вам будет
+                        присвоен ID для участия в&nbsp;розыгрышах.
+                      </span>
+                    </div>
+                    <img class="ky--game__swiper_btn ky--game__mvn js-game__mpn"
+                      src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/buutons-steps.webp"
+                      alt="" />
+                  </div>
+                  <a class="ky--game__swiper_btn-mv ky--game__mv js-game__mpn btns-padding dnp_btns_mt"
+                    href="https://sportmaster.onelink.me/wSOs/fwcvrwwr">
+                    <img
+                      src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/buttons-row.webp"
+                      alt="App Store" />
+                  </a>
+                  <div class="ky--game__swiper_content-mobile dnp_slider-leaf-1">
+
+                    <img
+                      src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/tel2.webp"
+                      class="dnp_image_responsive dnp_sl-2" alt="app">
+                  </div>
+                </div>
+
+                <div class="swiper-slide swipe">
+                  <div class="ky--game__swiper_content">
+                    <div class="ky--game__swiper_content-top">
+                      <h3 class="ky--game__swiper_h">Играйте каждый день</h3>
+                      <span class="ky--game__swiper_text">
+                        Выполняйте задания до&nbsp;24 декабря включительно и получайте билеты. Билеты вы сможете
+                        обменять на&nbsp;допуски к&nbsp;розыгрышам призов. Больше билетов — больше шансов выиграть!
+                      </span>
+                    </div>
+                    <img class="ky--game__swiper_btn ky--game__mvn js-game__mpn"
+                      src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/buutons-steps.webp"
+                      alt="" />
+                  </div>
+                  <a class="ky--game__swiper_btn-mv ky--game__mv js-game__mpn btns-padding dnp_btns_mt"
+                    href="https://sportmaster.onelink.me/wSOs/fwcvrwwr">
+                    <img
+                      src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/buttons-row.webp"
+                      alt="App Store" />
+                  </a>
+                  <div class="ky--game__swiper_content-mobile dnp_slider-leaf">
+
+                    <img
+                      src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/tel3.webp"
+                      class="dnp_image_responsive dnp_sl-3" alt="app">
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="ky--game__swiper_content">
+                    <div class="ky--game__swiper_content-top">
+                      <h3 class="ky--game__swiper_h">Как проходит розыгрыш</h3>
+                      <span class="ky--game__swiper_text">
+                        Победителей определим 26 декабря в&nbsp;18:00 в&nbsp;прямом эфире в&nbsp;приложении Спортмастер
+                        при&nbsp;помощи рандомайзера. Также результаты можно будет узнать в&nbsp;игре в&nbsp;разделе
+                        «Розыгрыши», вкладка «Победители розыгрыша».
+                      </span>
+
+                    </div>
+                    <img class="ky--game__swiper_btn ky--game__mvn js-game__mpn"
+                      src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/buutons-steps.webp"
+                      alt="" />
+                  </div>
+                  <a class="ky--game__swiper_btn-mv ky--game__mv js-game__mpn btns-padding dnp_btns_mt"
+                    href="https://sportmaster.onelink.me/wSOs/fwcvrwwr">
+                    <img
+                      src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/buttons-row.webp"
+                      alt="App Store" />
+                  </a>
+                  <div class="ky--game__swiper_content-mobile dnp_slider-leaf-2">
+
+                    <img
+                      src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/tel4.webp"
+                      class="dnp_image_responsive dnp_sl-4" alt="app">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="ky--game__swiper_navigation ky--game__swiper_navigation1">
+              <div class="swiper-button-prev">
+                <svg class="ky--animPulse" viewBox="0 0 67 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="33.5" cy="34.3979" r="33.5" fill="#35c6f8ff" />
+                  <path d="M33.5003 21.2896L46.609 34.3983L33.5003 47.507M44.9907 34.3983L19.9061 34.3983" stroke="#fff"
+                    stroke-width="2.18478" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next">
+                <svg class="ky--animPulse" viewBox="0 0 67 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="33.5" cy="34.3979" r="33.5" fill="#35c6f8ff" />
+                  <path d="M33.5003 21.2896L46.609 34.3983L33.5003 47.507M44.9907 34.3983L19.9061 34.3983" stroke="#fff"
+                    stroke-width="2.18478" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+    <!-- end как выиграть -->
+
+    <!-- start MP -->
+    <div class="ky--game__mp-wr sm-html-pad">
+      <style>
+        .ky--game__mp-wr {
+          border-radius: 120px 120px 0 0;
+          background: radial-gradient(194.51% 132.14% at 12.14% 25.36%, #1047FF 0%, #5B5BFC 39.78%, #FDC0BE 100%);
+          padding-top: 96px;
+          padding-bottom: 96px;
+          overflow: hidden;
+        }
+
+        .ky--game__mp {
+          display: flex;
+        }
+
+        .ky--game__mp_content {
+          max-width: 658px;
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          /* justify-content: space-between; */
+          gap: 28px;
+        }
+
+        .ky--game__mp_h {
+          font-family: 'SMSans', sans-serif;
+          color: #fff;
+          font-size: 44px;
+          font-style: italic;
+          font-weight: 700;
+          line-height: 52px;
+          letter-spacing: 1.4px;
+          text-align: left;
+          margin: 0;
+        }
+
+        .ky--game__mp_list {
+          margin: 42px 0;
+          padding-left: 0;
+          list-style-type: none;
+          color: #fff;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 30px;
+          letter-spacing: 0.8px;
+        }
+
+        .ky--game__mp_list li {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          min-height: 60px;
+        }
+
+        .ky--game__mp_list li span {
+          font-family: 'SMSans', sans-serif;
+        }
+
+        .ky--game__mp_list li:not(:last-child) {
+          margin-bottom: 12px;
+        }
+
+        .ky--game__mp_list img {
+          height: 100%;
+          object-fit: contain;
+        }
+
+        .ky--game__mp_btn {
+          height: 211px;
+          object-fit: contain;
+        }
+
+        .ky--game__mp_phone {
+          position: relative;
+          height: 610px;
+          display: block;
+          margin: auto;
+        }
+
+        .ky--game__mp_phone-img img {
+          object-fit: contain;
+          height: 100%;
+        }
+
+        /* slider */
+
+        .ky--game__sliderMP-wr {
+          position: absolute;
+          left: calc(3% / 2);
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .ky--game__sliderMP {
+          padding-bottom: 12%;
+        }
+
+        .ky--game__swiperMP.swiper-container {
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .ky--game__swiperMP .swiper {
+          width: 100%;
+          height: 100%;
+        }
+
+        .ky--game__swiperMP .swiper-slide {
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          transition: transform 0.3s ease;
+          opacity: 0;
+          padding: 20px 0;
+        }
+
+        .ky--game__swiperMP .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: all 0.3s ease;
+        }
+
+        .ky--game__swiperMP .swiper-slide-active {
+          opacity: 1;
+        }
+
+        .ky--game__swiperMP .swiper-slide-prev,
+        .ky--game__swiperMP .swiper-slide-next {
+          opacity: 1;
+        }
+
+        .ky--game__swiperMP .swiper-slide-prev {
+          opacity: 1;
+        }
+
+        .ky--game__swiperMP .swiper-slide::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: calc(100% - 20px * 2);
+          display: block;
+          border-radius: 29px;
+          background-color: rgba(255, 255, 255, 0.1);
+          z-index: -1;
+          filter: blur(7px);
+          -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+          filter: drop-shadow(2px 4px 6px black);
+          transition: all 0.3s ease;
+        }
+
+        @media (max-width: 1919px) {
+          .ky--game__mp-wr {
+            border-radius: 90px 90px 0 0;
+          }
+
+          .ky--game__mp {
+            gap: 0;
+          }
+
+          .ky--game__mp_content {
+            max-width: 590px;
+            min-width: 590px;
+          }
+
+          .ky--game__mp_h {
+            font-size: 38px;
+            line-height: 48px;
+            letter-spacing: 1.2px;
+          }
+
+          .ky--game__mp_list {
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 2px;
+          }
+
+          .ky--game__mp_list li:not(:last-child) {
+            margin-bottom: 6px;
+          }
+
+          .ky--game__mp_phone {
+            margin: auto;
+          }
+
+          .ky--game__mp_btn {
+            height: 154px;
+          }
+        }
+
+        @media (max-width: 1439px) {
+          .ky--game__mp-wr {
+            border-radius: 75px 75px 0 0;
+            padding-top: 72px;
+            padding-bottom: 72px;
+          }
+
+          .ky--game__mp_content {
+            max-width: 475px;
+            min-width: 475px;
+          }
+
+          .ky--game__mp_h {
+            font-size: 32px;
+            line-height: 38px;
+            letter-spacing: 1.2px;
+          }
+
+          .ky--game__mp_list {
+            margin: 24px 0;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.6px;
+
+          }
+
+          .ky--game__mp_list li {
+            gap: 16px;
+          }
+
+          .ky--game__mp_list img {
+            width: 50px;
+          }
+
+          .ky--game__mp_btn {
+            height: 122px;
+          }
+
+          .ky--game__mp_phone {
+            width: 100%;
+            height: initial;
+            margin-bottom: 42px;
+          }
+
+          .ky--game__mp_phone-img img {
+            width: 100%;
+            height: initial;
+          }
+
+          .ky--game__swiperMP .swiper-slide::after {
+            border-radius: 21px;
+          }
+        }
+
+        @media (max-width: 1023px) {
+          .ky--game__mp-wr {
+            border-radius: 70px 70px 0 0;
+          }
+
+          .ky--game__mp_content {
+            max-width: 380px;
+            min-width: 380px;
+          }
+
+          .ky--game__mp_h {
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.8px;
+          }
+
+          .ky--game__mp_list {
+            margin: 24px 0;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 1.3px;
+          }
+
+          .ky--game__mp_list img {
+            width: 60px;
+          }
+
+          .ky--game__mp_phone {
+            margin: 0 auto;
+            width: initial;
+            height: 477px;
+          }
+
+          .ky--game__mp_phone-img img {
+            width: initial;
+            height: 100%;
+          }
+        }
+
+        @media (max-width: 640px) {
+          .ky--game__mp-wr {
+            background: none;
+            padding-top: 56px;
+            padding-bottom: 56px;
+            border-radius: 0;
+          }
+
+          .ky--game__mp {
+            /* flex-direction: column; */
+            flex-direction: column-reverse;
+            gap: 56px;
+          }
+
+          .ky--game__mp_content {
+            min-width: 100%;
+            max-width: 100%;
+          }
+
+          .ky--game__mp_h {
+            font-size: 22px;
+            line-height: 30px;
+            letter-spacing: 0.8px;
+            white-space: normal;
+          }
+
+          .ky--game__mp_list {
+            margin: 0;
+            margin-top: 12px;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.4px;
+          }
+
+          .ky--game__mp_list li:not(:last-child) {
+            margin-bottom: 0;
+          }
+
+          .ky--game__mp_list img {
+            width: 40px;
+          }
+
+          .ky--game__mp .ky--game__mp_btn-mv {
+            margin-top: 10px;
+          }
+
+          .ky--game__mp_btn-mv {
+            text-decoration: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3px;
+          }
+
+          .ky--game__mp_btn-mv img {
+            width: 278px;
+            object-fit: contain;
+          }
+
+          .ky--game__mp_phone,
+          .ky--game__mp_phone-img img {
+            height: inherit;
+            width: 101%;
+            order: -1;
+          }
+        }
+
+        @media (max-width: 378px) {
+          .ky--game__swiperMP .swiper-slide::after {
+            border-radius: 13px;
+          }
+        }
+      </style>
+
+      <div class="sm-html-pad">
+        <section class="ky--game__mp">
+          <div class="ky--game__mp_content">
+
+            <div class="ky--game__mp_content-top">
+              <h2 class="ky--game__mp_h">Самое интересное — в приложении</h2>
+              <ul class="ky--game__mp_list">
+                <li>
+                  <img
+                    src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/30109114_30_05/Calendar-clock.svg"
+                    alt="icon" />
+                  <span>Афиша спортивных мероприятий в&nbsp;вашем городе</span>
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/30109114_30_05/stream.svg"
+                    alt="icon" />
+                  <span>Промокоды и розыгрыши в&nbsp;прямых эфирах</span>
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/30109114_30_05/bonus.svg"
+                    alt="icon" />
+                  <span>Подборки выгодных товаров в&nbsp;сторис</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <img class="ky--game__mp_btn ky--game__mvn js-game__mpn"
+                src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/buttons-qr.webp"
+                alt="buttons" />
+              <a class="ky--game__mp_btn-mv ky--game__mv js-game__mpn"
+                href="https://sportmaster.onelink.me/wSOs/fwcvrwwr">
+                <img
+                  src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/buttons-app-m.webp"
+                  alt="buttons" />
+            </div>
+            </a>
+          </div>
+
+          <div class="ky--game__mp_phone">
+            <div class="ky--game__sliderMP-wr">
+              <div class="ky--game__sliderMP">
+                <div class="swiper ky--game__swiperMP js-game-SwiperMP swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/30109114_30_05/stories-001.webp"
+                        alt="SM Banner" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/30109114_30_05/stories-002.webp"
+                        alt="SM Banner" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/30109114_30_05/stories-003.webp"
+                        alt="SM Banner" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/30109114_30_05/slide-3.webp"
+                        alt="SM Banner" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/30109114_30_05/stories-004.webp"
+                        alt="SM Banner" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/30109114_30_05/slide-5.webp"
+                        alt="SM Banner" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <picture class="ky--game__mp_phone-img">
+              <img
+                src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/30109114_30_05/phone-sl.webp"
+                alt="" />
+            </picture>
+          </div>
+        </section>
+        <!-- start лигал -->
+        <div>
+          <style>
+            .ky--game__mp_legal {
+              font-family: 'SMSans', sans-serif;
+              display: block;
+              margin-top: -3px;
+              padding-top: 96px;
+              color: #B9D2E8;
+              font-size: 12px;
+              line-height: 16px;
+            }
+
+            .ky--game__mp_legal a {
+              text-decoration: underline;
+              color: #B9D2E8;
+            }
+
+            @media (max-width: 1439px) {
+              .ky--game__mp_legal {
+                padding-top: 30px;
+              }
+            }
+
+            @media (max-width: 1023px) {
+              .ky--game__mp_legal {
+                padding-top: 74px;
+              }
+            }
+
+            @media (max-width: 767px) {
+              .ky--game__mp_legal {
+                padding-top: 50px;
+                text-align: left;
+              }
+            }
+          </style>
+
+          <span class="ky--game__mp_legal">
+            С 2.12.2024 по 24.12.2024 для авторизованных пользователей приложения Спортмастер. С полными правилами
+            акции можно ознакомиться по <a
+              href="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2024/news/97482058_02_12/rooles-ny.pdf"
+              target="_blank" style="text-decoration: underline;">ссылке</a>.
+          </span>
+        </div>
+        <!-- end лигал -->
+      </div>
+    </div>
+    <!-- end MP -->
+
+  </div>
+</main>
+
+<script
+  src="https://cdn.sportmaster.ru/upload/content/cmsgate/ru_sm/smprod/dip_content/2023/files/swiper-bundle10.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+
+<script>
+
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var imageBlocks = document.querySelectorAll('.js-anim:not(.shifted)');
+    var shiftedBlock = document.querySelector('.js-anim.shifted');
+    var delay = 150;
+
+    imageBlocks.forEach(function (imageBlock, index) {
+      var animation = anime({
+        targets: imageBlock,
+        opacity: [0, 1],
+        translateY: [-100, 0],
+        easing: 'easeOutQuad',
+        duration: 500,
+        delay: delay * index
+      });
+    });
+
+    if (shiftedBlock) {
+      var shiftedAnimation = anime({
+        targets: shiftedBlock,
+        opacity: [0, 1],
+        // translateX: [0, 106],
+        easing: 'easeOutQuad',
+        duration: 500,
+        delay: delay * (imageBlocks.length - 1)
+      });
+    }
+  });
+
+
+</script>
+
+<!-- Слайдеры с призами -->
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", () => {
+    let swiperSlide = new Swiper(".js-game-prize", {
+      spaceBetween: 3,
+      navigation: {
+        nextEl: ".ky--game__swiper_navigation2 .swiper-button-next",
+        prevEl: ".ky--game__swiper_navigation2 .swiper-button-prev",
+      },
+      pagination: {
+        el: ".ky--game__swiper_navigation2 .swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    let swiperSlide2 = new Swiper(".js-game-prize2", {
+      slidesPerView: 1.15,
+      // slidesPerView: 'auto',
+      autoWidth: true,
+      scrollbar: {
+        el: "#js-game-prize2",
+        draggable: true,
+      },
+    });
+  });
+</script>
+
+<!-- Слайдер с правилами -->
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", () => {
+    let swiperSlide3 = new Swiper(".js-game-Swiper", {
+      mousewheel: {
+        invent: true,
+        releaseOnEdges: true,
+      },
+      navigation: {
+        nextEl: ".ky--game__swiper_navigation1 .swiper-button-next",
+        prevEl: ".ky--game__swiper_navigation1 .swiper-button-prev",
+      },
+      pagination: {
+        el: ".ky--game__swiper_navigation1 .swiper-pagination",
+        clickable: true,
+      },
+    });
+  });
+</script>
+
+<!-- Слайдер в МП -->
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", () => {
+    let swiperMP = new Swiper(".js-game-SwiperMP", {
+      allowTouchMove: false,
+      slidesPerView: 3,
+      spaceBetween: 26,
+      loop: true,
+      speed: 500,
+      autoplay: {
+        delay: 2000,
+      },
+      breakpoints: {
+        640: {
+          spaceBetween: 34,
+        },
+        1440: {
+          spaceBetween: 50,
+        },
+      },
+      effect: "coverflow",
+      centeredSlides: true,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 310,
+        modifier: 1,
+        slideShadows: false,
+      },
+    });
+  });
+</script>
+
+<!-- 3D-tour 
+<script type="text/javascript">
+  const IFRAME_COUNT = document.querySelector(".js--iframe_cont");
+  // const IFRAME_REMOVE = document.querySelector('.js--iframe_remove');
+
+  function createIframe() {
+    const IFRAME = document.createElement("iframe");
+
+    IFRAME.className = "js--iframe";
+    IFRAME.src = "https://biganto.ru/tour/19175/";
+    IFRAME_COUNT.append(IFRAME);
+    // IFRAME_REMOVE.classList.add('visible');
+  }
+
+  function removeIframe() {
+    const IFRAME = document.querySelector(".js--iframe");
+
+    IFRAME.remove();
+    // IFRAME_REMOVE.classList.remove('visible');
+  }
+</script>-->
+
+<!-- МВ / МП -->
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", () => {
+    function getElementStyle(element, style) {
+      let itemArr = document.querySelectorAll(element);
+      itemArr.forEach((i) => {
+        i.style = style;
+      });
+    }
+
+    if (parent.window.location.href.indexOf("www.sportmaster.ru") > -1) {
+      getElementStyle(".js-game__mp", "display: none;");
+    } else {
+      getElementStyle(".js-game__mpn", "display: none;");
+      //getElementStyle(".ky--game__h1 span", "display: none;");
+      getElementStyle(".ky--game__mp", "flex-direction: column;");
+
+
+      let elementRemove = document.getElementById('js-game__mpn');
+      elementRemove.remove();
+
+      let firstSlide = document.querySelector('.ky--game__swiper .swiper-slide:nth-child(1)');
+
+      firstSlide.style.paddingBottom = '30px';
+
+      let swiperBlock = document.querySelector('.ky--game__swiper');
+
+      swiperBlock.style.height = '450px';
+
+      mobileBlock = firstSlide.querySelector('.ky--game__swiper_content-mobile');
+
+      mobileBlock.style.overflow = 'visible';
+
+      Array.from(document.querySelectorAll('.ky--game a[target="_blank"]')).forEach((link) => link.removeAttribute("target"));
+    }
+
+  });
+
+</script>
